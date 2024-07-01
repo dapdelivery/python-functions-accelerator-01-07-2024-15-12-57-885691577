@@ -1,0 +1,16 @@
+id: 06f83835-3529-404d-a258-fc18cadee80b
+timestamp: 2024-07-01T22:19:31Z
+username: root
+source: TanzuCLI
+accelerator:
+  name: python-function
+  source:
+    image: tap-sm-docker-dev-local.dmz.packages.broadcom.com/1.6.13-rc.7/tanzu-application-platform/tap-packages@sha256:8c1dddd43e46d785e585612d99704d226c4afca840761f95ff019215f0381230
+fragments:
+  - name: tap-workload
+    source:
+      image: tap-sm-docker-dev-local.dmz.packages.broadcom.com/1.6.13-rc.7/tanzu-application-platform/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  includeKubernetes: true
+  projectName: python-functions-accelerator-01-07-2024-15-12-57-885691577
+  repositoryPrefix: gcr.io/tap-ci/ci-pipeline/apps-01-07-2024-15-12-57-885691577
